@@ -1,4 +1,4 @@
-# HELLO HACKERS
+# Hello Hackers
 
 Just had to type `hello` to receive the flag.  
 Flag -> pwn.college{QW-1zcc15MbXp6RlfpydWxlq3md.ddjNyUDL2kzN0czW}

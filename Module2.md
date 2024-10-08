@@ -66,6 +66,12 @@ Executed the run program with the command `./run` to receive the flag.
 Flag -> pwn.college{M7RGT_A_B7bAy0sqSALdnf146LK.dFTN1QDL2kzN0czW}
 
 # Home sweet home
+The challenge required running the `/challenge/run` program with an argument that specifies where to write the flag.
+Initially tried to run the program with `cd /home/hacker/asdf` and `/challenge/run /home/hacker/f` which did not work.  
+Had to use ChatGPT for help and I tried to use . (dot) to indicate the current directory, but I realized that I needed to specify an actual filename instead.  
+Decided to use the filename c, which is three characters or less as specified.  
+Executed the commands `/challenge/run ~/c` to receive the flag.  
+Flag -> pwn.college{IOSJMkUNLx4YvMw5c-JDoxQTy7F.dNzM4QDL2kzN0czW}
 
 
 

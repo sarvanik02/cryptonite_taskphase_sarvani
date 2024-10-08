@@ -13,12 +13,12 @@ Flag -> pwn.college{gJpP1SaznmOr3VZZM8wHlC2ehvA.dVDN1QDL2kzN0czW}
 # Position thy self  
 The challenge required executing the /challenge/run program from a specific directory.  
 Initially tried executing the program with the following commands `cd/home/hacker` followed by `pwd`.  
-Received the following error:
-`Incorrect...
-You are not currently in the /usr/share/doc/fontconfig directory.
+Received the following error:  
+`Incorrect...  
+You are not currently in the /usr/share/doc/fontconfig directory.  
 Please use the `cd` utility to change directory appropriately.`  
 
-Executed the command to change to the required directory: `cd /usr/share/doc/`
+Executed the command to change to the required directory: `cd /usr/share/doc/`  
 Followed by the `pwd` command to confirm successful navigation.  
 Flag -> pwn.college{sddPbT_HofhaEgwYInxcG9rqjQS.dZDN1QDL2kzN0czW}  
 

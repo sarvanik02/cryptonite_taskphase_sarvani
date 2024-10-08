@@ -32,8 +32,41 @@ You are not currently in the /usr/share/zoneinfo/posix/Asia directory.
 Please use the `cd` utility to change directory appropriately.
 ````
 After encountering the error, I executed the command to change to the required directory: `cd /usr/share/zoneinfo/posix/Asia` followed by `pwd`.  
-Once I was in the correct directory, I ran the program with `/challenge/run`
+Once I was in the correct directory, I ran the program with `/challenge/run`  
 Flag -> pwn.college{IS-rpwzKfAhVHHNUzwbVhD9oXGs.ddDN1QDL2kzN0czW}
+
+# Position yet elsewhere
+Initially, I tried to execute the program from an incorrect directory `cd /usr/share/zoneinfo/posix/Asia`.  
+Received the following error message:
+```
+Incorrect...
+You are not currently in the /sys/kernel directory.
+Please use the `cd` utility to change directory appropriately.
+```
+Changed to the required directory: `/sys/kernel`.  
+Used the `pwd` command to confirm successful navigation followed by `/challenge/run` to run the program.  
+Flag -> pwn.college{U2TADtnZgrM97nNfLw895MQ-ymX.dhDN1QDL2kzN0czW}
+
+
+# implicit relative paths, from /
+Executed the command to change to the root directory : `cd / ` followed by `pwd` to verify successful navigation.  
+Executed this `challenge/run` to run the program.  
+Flag -> pwn.college{gI4pXOOmuRLVVSKWHpQOEEuuuDM.dlDN1QDL2kzN0czW}
+
+# explicit relative paths, from /
+The challenge was to run the `/challenge/run` program using a relative path that includes `.` to show the current directory.  
+I changed to the root directory with the command `cd /` followed by `pwd`.   
+I ran the run program using the relative path: `./challenge/run`
+Flag -> pwn.college{Ys0FFPhcO7FfXY1NKJx7yyMX1Ne.dBTN1QDL2kzN0czW}
+
+# Implicit relative path
+The challenge was to run the run program from the `/challenge` directory.
+I navigated to the /challenge directory by entering `cd /challenge` followed by `pwd` to confirm successful navigation.  
+Executed the run program with the command `./run` to receive the flag.  
+Flag -> pwn.college{M7RGT_A_B7bAy0sqSALdnf146LK.dFTN1QDL2kzN0czW}
+
+# Home sweet home
+
 
 
 

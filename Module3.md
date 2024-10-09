@@ -63,7 +63,47 @@ Output: `.TIP  auxiliaries_rkt.dep  auxiliaries_rkt.zo  chatter_rkt.dep  chatter
 Read `.TIP` with the following `cat /usr/share/racket/pkgs/htdp-lib/2htdp/uchat/compiled/.TI`    
 Finally found the flag. 
 
-# 
+# Making directories 
+Created a directory named `/tmp/pwn` and a file named `college` within it.  
+Commands used : `mkdir /tmp/pwn` followed by `touch /tmp/pwn/college`.  
+Confirmed the file's existence: `ls /tmp/pwn`  
+Output : `college`  
+Executed the command to retrieve the flag: `/challenge/run /tmp/pwn/college`  
+
+# finding files
+Ran the following command: `find / -name flag`  
+Output: All the possible paths were displayed  
+```
+1.  /usr/local/share/radare2/5.9.5/flag
+2.  /usr/local/lib/python3.8/dist-packages/pwnlib/flag
+3.  /opt/aflplusplus/nyx_mode/QEMU-Nyx/tests/tcg/mips/user/ase/msa/float-max-min/flag
+4.  /opt/pwndbg/.venv/lib/python3.8/site-packages/pwnlib/flag
+5.  /opt/radare2/libr/flag
+6.  /nix/store/pmvk2bk4p550w182rjfm529kfqddnvh3-python3.11-pwntools-4.12.0/lib/python3.11/site-packages/pwnlib/flag
+7.  /nix/store/1yagn5s8sf7kcs2hkccgf8d0wxlrv5sz-radare2-5.9.0/share/radare2/5.9.0/flag
+```
+Attempted to read the first two paths using the `cat` command, which returned errors indicating that they were directories  
+```
+cat /usr/local/share/radare2/5.9.5/flag : Is a directory
+cat /usr/local/lib/python3.8/dist-packages/pwnlib/flag : Is a directory
+```
+Successfully retrieved the flag from the third path.
+
+# linking files
+I learned how to create symbolic links in Linux using the `ln -s` command, which allows one file or directory to point to another.  
+Commands : `ln -s /flag /home/hacker/not-the-flag` followed by `file /home/hacker/not-the-flag` to verify the creation of the file.  
+Executed the `/challenge/catflag` to retrive the flag.
+
+
+
+
+
+
+
+
+
+
+
 
 
 

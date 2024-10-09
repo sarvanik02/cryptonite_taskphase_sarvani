@@ -57,8 +57,8 @@ Received another clue : `/usr/local/lib/python3.8/dist-packages/trio/_core/__pyc
 Listed files: `ls -a/usr/local/lib/python3.8/dist-packages/trio/_core/__pycache__`   
 Output : `CUE  __init__.cpython-38.pyc  elf.cpython-38.pyc  macho.cpython-38.pyc  pe.cpython-38.pyc  raw.cpython-38.pyc  universal.cpython-38.pyc`  
 Read the `CUE` file: `cat CUE`  
-Last clue directed to `/usr/share/racket/pkgs/htdp-lib/2htdp/uchat/compiled`
-Listed and read these files.
+Last clue directed to `/usr/share/racket/pkgs/htdp-lib/2htdp/uchat/compiled`  
+Listed and read these files.  
 Output: `.TIP  auxiliaries_rkt.dep  auxiliaries_rkt.zo  chatter_rkt.dep  chatter_rkt.zo  server_rkt.dep  server_rkt.zo`  
 Read `.TIP` with the following `cat /usr/share/racket/pkgs/htdp-lib/2htdp/uchat/compiled/.TI`    
 Finally found the flag. 

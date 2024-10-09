@@ -44,8 +44,8 @@ Ran`/challenge/run &` which started the background processes and returned the fl
 
 # Process Exit Codes
 Ran `/challenge/get-code` to retrive the exit code.  
-Then `echo $?` which gave `180` as the output.  
-Finally ran `/challenge/submit-code 180` to obtain the flag.  
+Then `echo $?` which gave `108` as the output.  
+Finally ran `/challenge/submit-code 108` to obtain the flag.  
 
 
 

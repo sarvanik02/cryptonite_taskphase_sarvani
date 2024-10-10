@@ -26,29 +26,22 @@ Run `ls -l /challenge/run` followed by `chmod a+x /challenge/run`. This is used 
 
 # Permission Tweaking Practise
 Ran `/challenge/run` to get started.  
-Output: 
+This returned  `Current permissions of "/challenge/pwn"` and `Needed permissions of "/challenge/pwn"`.  
+Changed all the permissions to the following:  
 ```
-Round 0 (of 8)!
-
-Current permissions of "/challenge/pwn": rw-r--r--
-* the user does have read permissions
-* the user does have write permissions
-- the user doesn't have execute permissions
-* the group does have read permissions
-- the group doesn't have write permissions
-- the group doesn't have execute permissions
-* the world does have read permissions
-- the world doesn't have write permissions
-- the world doesn't have execute permissions
-
-Needed permissions of "/challenge/pwn": rw-rw-rw-
-* the user does have read permissions
-* the user does have write permissions
-- the user doesn't have execute permissions
-* the group does have read permissions
-* the group does have write permissions
-- the group doesn't have execute permissions
-* the world does have read permissions
-* the world does have write permissions
-- the world doesn't have execute permissions
+chmod u+rw,g+rw,o+rw /challenge/pwn
+chmod u+x,g+x /challenge/pwn
+chmod o-r,o-w,o-x /challenge/pwn
+chmod g-r /challenge/pwn
+chmod g+r,o+rx /challenge/pwn
+chmod u-r,u-w,g-r,g-w,o-r,o-w /challenge/pwn
+chmod u+rw,o+rw /challenge/pwn
+chmod u-r,u-w,u-x,g-r,g-w,g-x /challenge/pwn
 ```
+It asked me to make `/flag` readable so gave the command `chmod a=r /flag`  
+`cat /flag` to obtain the flag. 
+
+# Permission Setting Practise
+
+
+

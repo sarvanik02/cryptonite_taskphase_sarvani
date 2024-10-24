@@ -2,7 +2,7 @@
 
 # The Root
 This challenge required invoking a program called `pwn` located in the root directory `(/)` to capture a flag.  
-I invoked the `pwn` program with the following command '/pwn` to receive the flag.  
+I invoked the `pwn` program with the following command `/pwn` to receive the flag.  
 Flag -> pwn.college{0m5G3NUDChlbSQmo-C37tm5ry8i.dhzN5QDL2kzN0czW}
 
 # Program and absolute paths

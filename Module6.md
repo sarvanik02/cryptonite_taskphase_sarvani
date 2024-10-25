@@ -18,10 +18,10 @@ Run `echo COLLEGE > PWN` which redirects to `PWN`.
 Followed by `/challenge/run < PWN` to get the flag.
 
 # Grepping stored results
-Run `/challenge/run > /tmp/data.txt` which redirects teh output to `/tmp/data.txt`.  
+Run `/challenge/run > /tmp/data.txt` which redirects the output to `/tmp/data.txt`.  
 Followed by `grep pwn /tmp/data.txt` to get the flag.  
 
-#Grepping live output
+# Grepping live output
 Learnt the usage of the pipe | operator and then ran `/challenge/run | grep pwn` to obtain the flag.  
 
 # Grepping errors
